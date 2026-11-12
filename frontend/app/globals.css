@@ -1,0 +1,153 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  padding: 9px 14px;
+  border: 1px solid #222;
+  background: #222;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: white;
+  color: #222;
+}
+
+button.danger {
+  background: #b42318;
+  border-color: #b42318;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 6px 0 12px;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 360px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.login-box label {
+  display: block;
+}
+
+.login-box button {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.header h2, .header p {
+  margin: 5px 0;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.form {
+  max-width: 500px;
+  padding: 18px;
+  margin: 20px 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search {
+  max-width: 450px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
+
+.message {
+  padding: 10px;
+  margin: 12px 0;
+  background: #e8e8e8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 12px;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+}
